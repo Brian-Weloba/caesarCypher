@@ -23,4 +23,11 @@ public class CypherTest {
         boolean valid = cypher.isInputValid("Hello");
         assertTrue(valid);
     }
+
+    @Test
+    public void isKeyValid_validKey_true() {
+        Cypher cypher = new Cypher();
+        boolean valid = cypher.isKeyValid(5);
+        assertTrue(valid);
+    }
 }
