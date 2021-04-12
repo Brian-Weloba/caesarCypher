@@ -37,4 +37,10 @@ public class CypherTest {
         String encoded = cypher.encode();
         assertEquals("bcd b", encoded);
     }
+
+    @Test public void cypher_canDecode_abc(){
+        Cypher cypher = new Cypher(27, "bcd b");
+        String decoded = cypher.decode();
+        assertEquals("abc a", decoded);
+    }
 }

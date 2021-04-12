@@ -60,4 +60,26 @@ public class Cypher {
 
         return encoded.toString();
     }
+
+    String decode(){
+        char[] inputArray = mInput.toCharArray();
+        StringBuilder decoded = new StringBuilder();
+
+        for (char c : inputArray) {
+            if (c == ' ') {
+                decoded.append(' ');
+            }
+            for (char letter : alphabetArray) {
+                if (c == letter) {
+                    try {
+                        decoded.append(alphabetArray[alphabet.indexOf(c) - ((mKey) % 26)]);
+                    } catch (Exception e) {
+                        decoded.append(alphabetArray[alphabet.indexOf(c) - ((mKey) % 26)+26]);
+                    }
+                }
+            }
+        }
+
+        return decoded.toString();
+    }
 }
