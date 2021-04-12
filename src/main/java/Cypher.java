@@ -32,8 +32,11 @@ public class Cypher {
                 return false;
             }
         }
-
         return true;
+    }
 
+    public boolean isKeyValid(int key) {
+
+        return key >= 1 && key < 26;
     }
 }
