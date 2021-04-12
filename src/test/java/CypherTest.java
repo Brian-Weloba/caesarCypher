@@ -30,4 +30,11 @@ public class CypherTest {
         boolean valid = cypher.isKeyValid(5);
         assertTrue(valid);
     }
+
+    @Test
+    public void cypher_canEncode_bcd() {
+        Cypher cypher = new Cypher(27, "abc a");
+        String encoded = cypher.encode();
+        assertEquals("bcd b", encoded);
+    }
 }

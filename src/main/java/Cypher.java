@@ -39,4 +39,25 @@ public class Cypher {
 
         return key >= 1 && key < 26;
     }
+
+    private String alphabet = "abcdefghijklmnopqrstuvwxyz";
+    private char[] alphabetArray = "abcdefghijklmnopqrstuvwxyz".toCharArray();
+
+    String encode() {
+        char[] inputArray = mInput.toCharArray();
+        StringBuilder encoded = new StringBuilder();
+
+        for (char c : inputArray) {
+            if (c == ' ') {
+                encoded.append(' ');
+            }
+            for (char letter : alphabetArray) {
+                if (c == letter) {
+                    encoded.append(alphabetArray[(alphabet.indexOf(c) + mKey) % 26]);
+                }
+            }
+        }
+
+        return encoded.toString();
+    }
 }
