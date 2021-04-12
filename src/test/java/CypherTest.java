@@ -17,4 +17,10 @@ public class CypherTest {
         assertEquals("Hello", input);
     }
 
+    @Test
+    public void isInputValid_validInput_true() {
+        Cypher cypher = new Cypher();
+        boolean valid = cypher.isInputValid("Hello");
+        assertTrue(valid);
+    }
 }
