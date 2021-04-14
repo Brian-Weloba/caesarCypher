@@ -19,9 +19,9 @@ public class Cipher {
     }
 
     public boolean isInputValid(String mInput) {
-        if((mInput !=null) && (!mInput.equals("") && (mInput.matches("^[a-zA-Z ]*$")))){
+        if ((mInput != null) && (!mInput.equals("") && (mInput.matches("^[a-zA-Z ]*$")))) {
             return true;
-        }else{
+        } else {
             System.out.println("Invalid Input. Your text appears to have non-alphabet characters!");
             return false;
         }
