@@ -16,15 +16,15 @@ In cryptography, a Caesar cipher, also known as Caesar's cipher, the shift ciphe
 * [Contact](#contact)
 
 ## Example
-The transformation can be represented by aligning two alphabets; the cipher alphabet is the plain alphabet rotated left or right by some number of positions. For instance, here is a Caesar cipher using a left rotation of three places, equivalent to a right shift of 23
+The transformation can be represented by aligning two alphabets; the cipher alphabet is the plain alphabet rotated left or right by some number of positions. For instance, here is a Caesar cipher using a left rotation of three places, equivalent to a right shift of 23  
 
-Plain	  A	B	C	D	E	F	G	H	I	J	K	L	M	N	O	P	Q	R	S	T	U	V	W	X	Y	Z
-Cipher	X	Y	Z	A	B	C	D	E	F	G	H	I	J	K	L	M	N	O	P	Q	R	S	T	U	V	W
+Plain	  A	B	C	D	E	F	G	H	I	J	K	L	M	N	O	P	Q	R	S	T	U	V	W	X	Y	Z  
+Cipher	X	Y	Z	A	B	C	D	E	F	G	H	I	J	K	L	M	N	O	P	Q	R	S	T	U	V	W  
 
-When encrypting, a person looks up each letter of the message in the "plain" line and writes down the corresponding letter in the "cipher" line.
+When encrypting, a person looks up each letter of the message in the "plain" line and writes down the corresponding letter in the "cipher" line.  
 
-Plaintext:  THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG
-Ciphertext: QEB NRFZH YOLTK CLU GRJMP LSBO QEB IXWV ALD
+Plaintext:  THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG  
+Ciphertext: QEB NRFZH YOLTK CLU GRJMP LSBO QEB IXWV ALD  
 
 ## Technologies
 <img alt="Java" src="https://img.shields.io/badge/java-%23ED8B00.svg?&style=for-the-badge&logo=java&logoColor=white"/>
