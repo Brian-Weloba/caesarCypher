@@ -19,20 +19,12 @@ public class Cipher {
     }
 
     public boolean isInputValid(String mInput) {
-
-        if (mInput.isEmpty() || mInput.equals(" ")) {
-            System.out.println("Input is not valid");
+        if((mInput !=null) && (!mInput.equals("") && (mInput.matches("^[a-zA-Z ]*$")))){
+            return true;
+        }else{
+            System.out.println("Invalid Input. Your text appears to have non-alphabet characters!");
+            return false;
         }
-
-        char[] inputArray = mInput.toCharArray();
-
-        for (char c : inputArray) {
-            if (!Character.isLetter(c) && c != ' ') {
-                System.out.println("Input is not valid");
-                return false;
-            }
-        }
-        return true;
     }
 
     public boolean isKeyValid(int key) {
