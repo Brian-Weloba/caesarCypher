@@ -37,7 +37,7 @@ public class Cipher {
 
     public boolean isKeyValid(int key) {
 
-        return key >= 1 && key < 26;
+        return key >= 1 && key < 100;
     }
 
     private String alphabet = "abcdefghijklmnopqrstuvwxyz";
