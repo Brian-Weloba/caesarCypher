@@ -36,8 +36,12 @@ public class Cipher {
     }
 
     public boolean isKeyValid(int key) {
-
-        return key >= 1 && key < 100;
+        if (key >= 1 && key < 100) {
+            return true;
+        } else {
+            System.out.println("Invalid input. Key should be an integer value between 1 and 100");
+            return false;
+        }
     }
 
     private String alphabet = "abcdefghijklmnopqrstuvwxyz";
@@ -61,7 +65,7 @@ public class Cipher {
         return encoded.toString();
     }
 
-    String decode(){
+    String decode() {
         char[] inputArray = mInput.toCharArray();
         StringBuilder decoded = new StringBuilder();
 
@@ -74,7 +78,7 @@ public class Cipher {
                     try {
                         decoded.append(alphabetArray[alphabet.indexOf(c) - ((mKey) % 26)]);
                     } catch (Exception e) {
-                        decoded.append(alphabetArray[alphabet.indexOf(c) - ((mKey) % 26)+26]);
+                        decoded.append(alphabetArray[alphabet.indexOf(c) - ((mKey) % 26) + 26]);
                     }
                 }
             }
