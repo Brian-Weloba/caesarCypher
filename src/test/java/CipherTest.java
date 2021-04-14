@@ -25,6 +25,13 @@ public class CipherTest {
     }
 
     @Test
+    public void isInputValid_allowsWhitespace_true(){
+        Cipher cipher = new Cipher();
+        boolean valid = cipher.isInputValid("Hello hi");
+        assertTrue(valid);
+    }
+
+    @Test
     public void isKeyValid_validKey_true() {
         Cipher cipher = new Cipher();
         boolean valid = cipher.isKeyValid(5);
