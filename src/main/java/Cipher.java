@@ -36,8 +36,8 @@ public class Cipher {
         }
     }
 
-    private String alphabet = "abcdefghijklmnopqrstuvwxyz";
-    private char[] alphabetArray = "abcdefghijklmnopqrstuvwxyz".toCharArray();
+    final String alphabet = "abcdefghijklmnopqrstuvwxyz";
+    final char[] alphabetArray = "abcdefghijklmnopqrstuvwxyz".toCharArray();
 
     String encode() {
         char[] inputArray = mInput.toCharArray();
