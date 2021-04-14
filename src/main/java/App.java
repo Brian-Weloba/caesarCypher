@@ -14,14 +14,14 @@ public class App {
                         "╚█████╔╝██║░░██║███████╗██████╔╝██║░░██║██║░░██║\n" +
                         "░╚════╝░╚═╝░░╚═╝╚══════╝╚═════╝░╚═╝░░╚═╝╚═╝░░╚═╝\n");
         System.out.println("\n" +
-                "░█████╗░██╗░░░██╗██████╗░██╗░░██╗███████╗██████╗░\n" +
-                "██╔══██╗╚██╗░██╔╝██╔══██╗██║░░██║██╔════╝██╔══██╗\n" +
-                "██║░░╚═╝░╚████╔╝░██████╔╝███████║█████╗░░██████╔╝\n" +
-                "██║░░██╗░░╚██╔╝░░██╔═══╝░██╔══██║██╔══╝░░██╔══██╗\n" +
-                "╚█████╔╝░░░██║░░░██║░░░░░██║░░██║███████╗██║░░██║\n" +
-                "░╚════╝░░░░╚═╝░░░╚═╝░░░░░╚═╝░░╚═╝╚══════╝╚═╝░░╚═╝\n");
+                "░█████╗░██╗██████╗░██╗░░██╗███████╗██████╗░\n" +
+                "██╔══██╗██║██╔══██╗██║░░██║██╔════╝██╔══██╗\n" +
+                "██║░░╚═╝██║██████╔╝███████║█████╗░░██████╔╝\n" +
+                "██║░░██╗██║██╔═══╝░██╔══██║██╔══╝░░██╔══██╗\n" +
+                "╚█████╔╝██║██║░░░░░██║░░██║███████╗██║░░██║\n" +
+                "░╚════╝░╚═╝╚═╝░░░░░╚═╝░░╚═╝╚══════╝╚═╝░░╚═╝\n");
         System.out.println(" ");
-        System.out.println("WELCOME TO CAESAR CYPHER!!");
+        System.out.println("WELCOME TO CAESAR CIPHER!!");
 
         while (true) {
 
@@ -39,9 +39,9 @@ public class App {
                 String inputText = con.readLine().toLowerCase();
                 System.out.println("Enter key: ");
                 int key = Integer.parseInt(con.readLine().trim());
-                Cypher cypher = new Cypher(key, inputText);
-                if (cypher.isInputValid(inputText) && cypher.isKeyValid(key)) {
-                    System.out.println("The encoded text is: \n"+ cypher.encode());
+                Cipher cipher = new Cipher(key, inputText);
+                if (cipher.isInputValid(inputText) && cipher.isKeyValid(key)) {
+                    System.out.println("The encoded text is: \n"+ cipher.encode());
                 }
 
             }else if (response==2){
@@ -49,9 +49,9 @@ public class App {
                 String inputText = con.readLine().toLowerCase();
                 System.out.println("Enter key: ");
                 int key = Integer.parseInt(con.readLine().trim());
-                Cypher cypher = new Cypher(key, inputText);
-                if (cypher.isInputValid(inputText) && cypher.isKeyValid(key)) {
-                    System.out.println("The decoded text is: \n"+ cypher.decode());
+                Cipher cipher = new Cipher(key, inputText);
+                if (cipher.isInputValid(inputText) && cipher.isKeyValid(key)) {
+                    System.out.println("The decoded text is: \n"+ cipher.decode());
                 }
 
             }else if ( response ==3){

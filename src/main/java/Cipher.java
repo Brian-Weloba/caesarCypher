@@ -1,4 +1,4 @@
-public class Cypher {
+public class Cipher {
     private int mKey;
     private String mInput;
 
@@ -10,12 +10,12 @@ public class Cypher {
         return mInput;
     }
 
-    public Cypher(int mKey, String mInput) {
+    public Cipher(int mKey, String mInput) {
         this.mKey = mKey;
         this.mInput = mInput;
     }
 
-    public Cypher() {
+    public Cipher() {
     }
 
     public boolean isInputValid(String mInput) {
