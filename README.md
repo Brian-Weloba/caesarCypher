@@ -10,9 +10,6 @@ In cryptography, a Caesar cipher, also known as Caesar's cipher, the shift ciphe
 * [Example](#example)
 * [Technologies](#technologies)
 * [Setup](#setup)
-* [Features](#features)
-* [Status](#status)
-* [Inspiration](#inspiration)
 * [Contact](#contact)
 
 ## Example
