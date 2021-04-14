@@ -39,5 +39,5 @@ Ciphertext: QEB NRFZH YOLTK CLU GRJMP LSBO QEB IXWV ALD
 * Compile and run using the command `javac App.java && java App` within the **[/src/main/java]** directory
 
 ## Contact
-[<img alt="Instagram" src="https://img.shields.io/badge/<@nyonges4>%20-%23E4405F.svg?&style=for-the-badge&logo=Instagram&logoColor=white"/>](https://www.instagram.com/nyonges4/)
+[<img alt="Instagram" src="https://img.shields.io/badge/@nyonges4%20-%23E4405F.svg?&style=for-the-badge&logo=Instagram&logoColor=white"/>](https://www.instagram.com/nyonges4/)
 [<img alt="Gmail" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />](mailto:bweloba@gmail.com)
